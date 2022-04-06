@@ -4,7 +4,6 @@ const { Listing } = require('../models');
 const withAuth = require('../utils/auth');
 const serialize = require('../utils/serialize');
 
-// Importing custom middleware
 
 // GET all listing for homepage
 router.get('/', async (req, res) => {
@@ -31,45 +30,15 @@ router.get('/', async (req, res) => {
   }
 });
 
-// GET one gallery
+// GET one listing
 // TODO: Replace the logic below with the custom middleware
-router.get('/gallery/:id', withAuth, async (req, res) => {
-  // If the user is not logged in, redirect the user to the login page
-  // If the user is logged in, allow them to view the gallery
+router.get('/listing/:id', withAuth, async (req, res) => {
   try {
-    const dbGalleryData = await Gallery.findByPk(req.params.id, {
-      include: [
-        {
-          model: Painting,
-          attributes: [
-            'id',
-            'title',
-            'artist',
-            'exhibition_date',
-            'filename',
-            'description',
-          ],
-        },
-      ],
-    });
-    const gallery = serialize(dbGalleryData);
-    res.render('gallery', { gallery, loggedIn: req.session.loggedIn });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-}
-);
+    const dbListingData = await Listing.findByPk(req.params.id);
 
-// GET one painting
-// TODO: Replace the logic below with the custom middleware
-router.get('/painting/:id', withAuth, async (req, res) => {
-  try {
-    const dbPaintingData = await Painting.findByPk(req.params.id);
+    const listing = serialize(dbListingData);
 
-    const painting = serialize(dbPaintingData);
-
-    res.render('painting', { painting, loggedIn: req.session.loggedIn });
+    res.render('listing', { listing, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);

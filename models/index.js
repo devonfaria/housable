@@ -12,4 +12,4 @@ Listing.belongsTo(User, {
 
 
 
-module.exports = { User, Listing};
+module.exports = { User, Listing };
