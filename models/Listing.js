@@ -11,22 +11,27 @@ Listing.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    description: {
-      type: DataTypes.STRING,
-    },
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
+    },        
+    description: {
+      type: DataTypes.STRING,
     },
-    needed_funding: {
-      type: DataTypes.FLOAT,
-      allowNull: false,
+    plants: {
+      type: DataTypes.STRING,
     },
+    pets: {
+      type: DataTypes.STRING,
+    },
+    contact: {
+      type: DataTypes.STRING,
+    },
+    // state: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
