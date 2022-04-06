@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS housable_db;
+CREATE DATABASE housable_db;
