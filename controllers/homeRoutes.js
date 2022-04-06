@@ -5,7 +5,6 @@ const withAuth = require('../utils/auth');
 const serialize = require('../utils/serialize');
 
 // Importing custom middleware
-application.use(withAuth);
 
 // GET all listing for homepage
 router.get('/', async (req, res) => {
