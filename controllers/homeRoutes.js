@@ -23,6 +23,23 @@ router.get('/', async (req, res) => {
   }
 });
 
+// Get all listings for the listings page
+router.get('/listings', async (req, res) => {
+  try {
+    const dbListingData = await Listing.findAll({});
+    const listings = dbListingData.map(
+      (listing) => serialize(listing));
+
+    res.render('listings', {
+      listings,
+      loggedIn: req.session.loggedIn,
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 // GET one listing
 // TODO: Replace the logic below with the custom middleware
 router.get('/listings/:id', withAuth, async (req, res) => {
