@@ -4,7 +4,6 @@ const { Listing } = require('../models');
 const withAuth = require('../utils/auth');
 const serialize = require('../utils/serialize');
 
-
 // GET all listing for homepage
 router.get('/', async (req, res) => {
   try {
