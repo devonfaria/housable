@@ -47,7 +47,7 @@ router.get('/listings/:id', withAuth, async (req, res) => {
     const dbListingData = await Listing.findByPk(req.params.id);
 
     const listing = serialize(dbListingData);
-
+    console.log(listing)
     res.render('listings', { listing, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
@@ -56,6 +56,7 @@ router.get('/listings/:id', withAuth, async (req, res) => {
 });
 
 router.get('/login', (req, res) => {
+
   if (req.session.loggedIn) {
     res.redirect('/');
     return;
