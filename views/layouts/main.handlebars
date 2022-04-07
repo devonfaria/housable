@@ -15,12 +15,12 @@
     <img src="/images/housable.png" alt="Housable">
   </header>
   <nav>
-    <a href="/">Home</a>
-    <a href="/listings">Listings</a>
+    <a href="/"><button>Home</button></a>
+    <a href="/listings"><button>Listings</button></a>
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
-    <a href="/login">Login</a>
+    <a href="/login"><button>Login</button></a>
     {{/if}}
   </nav>
   <main>
