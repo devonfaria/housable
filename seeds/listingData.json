@@ -1,12 +1,14 @@
 [ 
   {  
-  "description": "This listing needs help with lawn work, cleaning the pool, and landscaping.",
-  "plants": "Swiss cheese monsterra, Hoya, Tetrasperma",
-  "pets": "dog, cat, llama",
-  "contact": "828-404-3030",
-  "user_id": 1
+    "title": "Victorian Home",
+    "description": "This listing needs help with lawn work, cleaning the pool, and landscaping.",
+    "plants": "Swiss cheese monsterra, Hoya, Tetrasperma",
+    "pets": "dog, cat, llama",
+    "contact": "828-404-3030",
+    "user_id": 1
   },
   {  
+    "title": "Arts and Crafts Home",
     "description": "Please clean the gutters regularly and landscaping.",
     "plants": "Pathos",
     "pets": "ferret",
@@ -14,6 +16,7 @@
     "user_id": 2
   },
   {  
+    "title": "Trailer Heaven",
     "description": "This listing needs help with lawn work, cleaning the pool, and landscaping.",
     "plants": "Orchid",
     "pets": "cat, hamster",
@@ -21,6 +24,7 @@
     "user_id": 3
   },
   {  
+    "title": "Mom's Guest House",
     "description": "This listing needs help with cleaning the stable, and washing and feeding the horse",
     "plants": "Aloe Plant",
     "pets": "dog, horse",
@@ -28,6 +32,7 @@
     "user_id": 4
   },
   {  
+    "title": "Riverside Cottage",
     "description": "Please make sure to change filters for the water purifier, and feed the llama.",
     "plants": "Lillies, Roses",
     "pets": "llama",
