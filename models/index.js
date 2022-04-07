@@ -1,5 +1,7 @@
 const User = require('./User');
 const Listing = require('./Listing');
+const { append } = require('express/lib/response');
+const { application } = require('express');
 
 User.hasMany(Listing, {
   foreignKey: 'user_id',
@@ -12,4 +14,4 @@ Listing.belongsTo(User, {
 
 
 
-module.exports = { User, Listing };
+module.exports = { User, Listing};

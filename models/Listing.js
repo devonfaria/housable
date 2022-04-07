@@ -18,15 +18,19 @@ Listing.init(
     },        
     description: {
       type: DataTypes.STRING,
+      allowNull: false,
     },
     plants: {
       type: DataTypes.STRING,
+      allowNull: false,
     },
     pets: {
       type: DataTypes.STRING,
+      allowNull: false,
     },
     contact: {
       type: DataTypes.STRING,
+      allowNull: false,
     },
     // state: {
     //   type: DataTypes.STRING,
