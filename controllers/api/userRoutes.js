@@ -72,7 +72,7 @@ router.post('/login', async (req, res) => {
         '🚀 ~ file: user-routes.js ~ line 57 ~ req.session.save ~ req.session.cookie',
         req.session.cookie
       ),
-      res.json({ user: userData, message: 'You are now logged in!' });
+        res.json({ user: userData, message: 'You are now logged in!' });
 
     });
 
