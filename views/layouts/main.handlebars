@@ -12,26 +12,25 @@
 
 <body>
   <header>
-    <img src="/public/images/housable.png" alt="Housable">
+    <img src="/images/housable.png" alt="Housable">
   </header>
   <nav>
     <a href="/">Home</a>
+     <a href="/listings">Listings</a>
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
     <a href="/login">Login</a>
     {{/if}}
-     <a href="/listings">Listings</a>
-     <a href="/listings">Signup</a>
   </nav>
   <main>
     <div class="listings">
       {{{ body }}}
     </div>
   </main>
-   {{#if loggedIn}}
+   {{!-- {{#if loggedIn}}
   <script src="/js/logout.js"></script>
-  {{/if}}
+  {{/if}} --}}
 </body>
 
 </html>
