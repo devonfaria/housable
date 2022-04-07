@@ -8,14 +8,7 @@ const serialize = require('../utils/serialize');
 // GET all listing for homepage
 router.get('/', async (req, res) => {
   try {
-    const dbListingData = await Listing.findAll({
-      include: [
-        {
-          model: Painting,
-          attributes: ['filename', 'description'],
-        },
-      ],
-    });
+    const dbListingData = await Listing.findAll({});
 
     const listings = dbListingData.map((listing) =>
       serialize(listing));

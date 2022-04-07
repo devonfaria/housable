@@ -1,17 +1,37 @@
-[
-  {
-    "name": "Music Near Me",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "needed_funding": 5000
+[ 
+  {  
+  "description": "This listing needs help with lawn work, cleaning the pool, and landscaping.",
+  "plants": "Swiss cheese monsterra, Hoya, Tetrasperma",
+  "pets": "dog, cat, llama",
+  "contact": "828-404-3030",
+  "user_id": 1
   },
-  {
-    "name": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-    "needed_funding": 10000
+  {  
+    "description": "Please clean the gutters regularly and landscaping.",
+    "plants": "Pathos",
+    "pets": "ferret",
+    "contact": "828-808-3030",
+    "user_id": 2
   },
-  {
-    "name": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-    "needed_funding": 800
+  {  
+    "description": "This listing needs help with lawn work, cleaning the pool, and landscaping.",
+    "plants": "Orchid",
+    "pets": "cat, hamster",
+    "contact": "828-707-3030",
+    "user_id": 3
+  },
+  {  
+    "description": "This listing needs help with cleaning the stable, and washing and feeding the horse",
+    "plants": "Aloe Plant",
+    "pets": "dog, horse",
+    "contact": "828-606-3030",
+    "user_id": 4
+  },
+  {  
+    "description": "Please make sure to change filters for the water purifier, and feed the llama.",
+    "plants": "Lillies, Roses",
+    "pets": "llama",
+    "contact": "828-505-3030",
+    "user_id": 5
   }
 ]
