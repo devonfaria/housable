@@ -25,13 +25,13 @@ router.get('/', async (req, res) => {
 
 // GET one listing
 // TODO: Replace the logic below with the custom middleware
-router.get('/listing/:id', withAuth, async (req, res) => {
+router.get('/listings/:id', withAuth, async (req, res) => {
   try {
     const dbListingData = await Listing.findByPk(req.params.id);
 
     const listing = serialize(dbListingData);
 
-    res.render('listing', { listing, loggedIn: req.session.loggedIn });
+    res.render('listings', { listing, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
