@@ -27,7 +27,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Delete listing by ID
+// Delete User by ID
 router.delete('/:id', async (req, res) => {
   try {
     const userData = await User.destroy({
@@ -45,6 +45,7 @@ router.delete('/:id', async (req, res) => {
   }
 });
 
+// Validate User and log in
 router.post('/login', async (req, res) => {
   try {
     // Uses email to find cooresponding user
@@ -63,7 +64,7 @@ router.post('/login', async (req, res) => {
         .json({ message: 'Incorrect email or password, please try again' });
       return;
     }
-
+    // Sets loggedIn to true
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
@@ -76,6 +77,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
+// Logout User
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
