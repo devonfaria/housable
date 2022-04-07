@@ -10,9 +10,13 @@ router.post('/', async (req, res) => {
   //     password: req.body.password,
   //   });
 
- 
+
   try {
-    const userData = await User.create(req.body);
+    const userData = await User.create({
+      name: req.body.username,
+      email: req.body.email,
+      password: req.body.password,
+    }, req.body);
 
     req.session.save(() => {
       req.session.user_id = userData.id;
@@ -80,7 +84,7 @@ router.post('/login', async (req, res) => {
         '🚀 ~ file: user-routes.js ~ line 57 ~ req.session.save ~ req.session.cookie',
         req.session.cookie
       ),
-      res.json({ user: userData, message: 'You are now logged in!' });
+        res.json({ user: userData, message: 'You are now logged in!' });
 
     });
 
