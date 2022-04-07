@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Listing } = require('../../models');
 
-// Get all listings
+// Get all Listings
 router.get('/', async (req, res) => {
   try {
     const allListings = await Listing.findAll({});
@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Create new listing
+// Create new Listing
 router.post('/', async (req, res) => {
   try {
     const newListing = await Listing.create(req.body);
@@ -21,7 +21,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// Delete listing by ID
+// Delete Listing by ID
 router.delete('/:id', async (req, res) => {
   try {
     const listingData = await Listing.destroy({
