@@ -1,23 +1,9 @@
 <div class="hero-wrapper">
   <img class='hero-main' src='/images/pexels-klaudia-ekert-2383122.jpg'>
 </div>
-
-{{!-- This is were all your house sitting needs are met! We are a company here to satisfiy your dea --}}
-{{!-- <h3 class="section-heading">About Us</h3>
-      <p class="section-description">Welcome to Housable! </p> --}}
-
-<div class="container">
-      <h2 class="section-heading">Welcome to Housable!</h2>
-      <h5 class="section-description">Need to go somewhere?, Looking for someone to watch your house while your gone, Look no further we've gotcha covered!</h5>
+<div class="signUp">
+  <a href="/login"><button class="button-primary" id="signupOnHomepage" class="btn-no-style">Sign Up</button></a>
 </div>
-
-<button id="signupOnHomepage" class="btn-no-style">Signup</button>
-
-{{!-- <section class="container">
-  <h2>About Us</h2>
-</section> --}}
-
-
 {{#each listings}}
 <div class="container">
   {{> listing-cards}}
