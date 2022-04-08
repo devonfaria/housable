@@ -13,6 +13,7 @@ router.get('/', async (req, res) => {
 
 // Create new Listing
 router.post('/addlisting', async (req, res) => {
+  console.log('Req body: ', req.body);
   try {
     const newListing = await Listing.create({
       title: req.body.title,
