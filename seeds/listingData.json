@@ -5,7 +5,8 @@
     "plants": "Swiss cheese monsterra, Hoya, Tetrasperma",
     "pets": "dog, cat, llama",
     "contact": "828-404-3030",
-    "user_id": 1
+    "user_id": 1,
+    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428805/static/A_-_Front_Elevation_5_qf2awj.jpg"
   },
   {  
     "title": "Arts and Crafts Home",
@@ -13,7 +14,8 @@
     "plants": "Pathos",
     "pets": "ferret",
     "contact": "828-808-3030",
-    "user_id": 2
+    "user_id": 2,
+    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428764/static/WEBYonderFairview_BrenPhotography_080.41_zul2ah.jpg"
   },
   {  
     "title": "Trailer Heaven",
@@ -21,7 +23,8 @@
     "plants": "Orchid",
     "pets": "cat, hamster",
     "contact": "828-707-3030",
-    "user_id": 3
+    "user_id": 3,
+    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428763/static/A_-_Front_Elevation_1_.22_lhqgjj.jpg"
   },
   {  
     "title": "Mom's Guest House",
@@ -29,7 +32,8 @@
     "plants": "Aloe Plant",
     "pets": "dog, horse",
     "contact": "828-606-3030",
-    "user_id": 4
+    "user_id": 4,
+    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428763/static/MikeMatthews-Slideshow-2016-Ipad-Ramble_1_mc7fja.jpg"
   },
   {  
     "title": "Riverside Cottage",
@@ -37,6 +41,16 @@
     "plants": "Lillies, Roses",
     "pets": "llama",
     "contact": "828-505-3030",
-    "user_id": 5
+    "user_id": 5,
+    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428763/static/IMG_0526_1_o5kboo.jpg"
+  },
+  {  
+    "title": "Castlemania",
+    "description": "Please make sure to restock the parapets and lower your hair to let the Prince up.",
+    "plants": "Thorn bushes, Fiddleleaf Fig Tree",
+    "pets": "dragon",
+    "contact": "828-909-7878",
+    "user_id": 1,
+    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428763/static/_DSC0104-min_ybjds0.jpg"
   }
 ]
