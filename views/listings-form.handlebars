@@ -1,22 +1,21 @@
 {{!-- res.render('listings') will get this file name in the controller directory route file that you set --}}
 {{!-- the render function takes in 2 parameters: 1. handlebar template name 2. object full of options { example: dishes }  --}}
 
-  
   <div class='add-listing'>
     <h2>
       Please fill out the form to create your listing!
     </h2>
     <form class='new-listing-form'>
-      <label for='date_created'>
-        Date:
+      <label for='title'>
+        Listing Title:
       </label>
       <br />
-      <textarea id='date_created' name='date_created' rows='2' cols='30'>
-        {{date_created}}
+      <textarea id='title' name='title' rows='2' cols='30'>
+        {{title}}
       </textarea>
       <br />
       <label for='description'>
-        Description:
+        Tasks Description:
       </label>
       <br />
       <textarea id='description' name='description' rows='5' cols='30'>
@@ -24,7 +23,7 @@
       </textarea>
       <br />
       <label for='plants'>
-        plants:
+        Plants that will require care:
       </label>
       <br />
       <textarea id='plants' name='plants' rows='2' cols='30'>
@@ -32,7 +31,7 @@
       </textarea>
       <br />
       <label for='pets'>
-        Pets:
+        Pets that will require care:
       </label>
       <br />
       <textarea id='pets' name='pets' rows='2' cols='30'>
@@ -40,11 +39,35 @@
       </textarea>
       <br />
       <label for='contact'>
-        contact:
+        Contact (phone/email) associated with this listing:
       </label>
       <br />
       <textarea id='contact' name='contact' rows='2' cols='30'>
         {{contact}}
+      </textarea>
+      <br />
+      <label for='file-url'>
+        Please enter the image URL for your listing:
+      </label>
+      <br />
+      <textarea id='file-url' name='file-url' rows='2' cols='30'>
+        {{file_url}}
+      </textarea>
+      <br />
+      <label for='circle-url'>
+        Please enter the circular image URL for your listing:
+      </label>
+      <br />
+      <textarea id='circle-url' name='circle-url' rows='2' cols='30'>
+        {{circle_url}}
+      </textarea>
+      <br />
+      <label for='user-id'>
+        Contact (phone/email) associated with this listing:
+      </label>
+      <br />
+      <textarea id='user-id' name='user-id' rows='2' cols='30'>
+        {{user_id}}
       </textarea>
       <button type='submit' value='Submit'>
         Submit
