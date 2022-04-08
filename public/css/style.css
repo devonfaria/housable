@@ -12,3 +12,18 @@
   width: 100%;
   overflow: hidden;
 }
+
+/* desktop */
+/* @media (max-width: 1000px) {
+  .hero-wrapper {
+    width: 100vw;
+    height: 100vh; */
+    
+ /* }
+} */
+
+/* phablet */
+/* @media (min-width: 550px) {
+
+  
+} */
