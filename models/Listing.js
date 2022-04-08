@@ -36,6 +36,10 @@ Listing.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    file_url: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
     // state: {
     //   type: DataTypes.STRING,
     //   allowNull: false,
