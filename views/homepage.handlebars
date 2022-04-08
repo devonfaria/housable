@@ -1,2 +1,10 @@
- <p>TEST DOES THIS WORK</p>
- <button id="signupOnHomepage" class="btn-no-style">Signup</button>
+<div class="hero-wrapper">
+  <img class='hero-main' src='/images/pexels-klaudia-ekert-2383122.jpg'>
+</div>
+<button id="signupOnHomepage" class="btn-no-style">Signup</button>
+
+{{#each listings}}
+<div class="container">
+  {{> listing-cards}}
+</div>
+{{/each}}

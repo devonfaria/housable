@@ -1,0 +1,14 @@
+.hero-main {
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.hero-wrapper {
+  max-height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
