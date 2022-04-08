@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Listing extends Model {}
+class Listing extends Model { }
 
 Listing.init(
   {
@@ -11,11 +11,15 @@ Listing.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    date_created: {
-      type: DataTypes.DATE,
+    // date_created: {
+    //   type: DataTypes.DATE,
+    //   allowNull: false,
+    //   defaultValue: DataTypes.NOW,
+    // },
+    title: {
+      type: DataTypes.STRING,
       allowNull: false,
-      defaultValue: DataTypes.NOW,
-    },        
+    },
     description: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -32,6 +36,10 @@ Listing.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    file_url: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
     // state: {
     //   type: DataTypes.STRING,
     //   allowNull: false,
@@ -46,7 +54,7 @@ Listing.init(
   },
   {
     sequelize,
-    timestamps: false,
+    timestamps: true,
     freezeTableName: true,
     underscored: true,
     modelName: 'listing',
