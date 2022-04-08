@@ -44,19 +44,28 @@ router.get('/listings/:id', withAuth, async (req, res) => {
   try {
     const dbListingData = await Listing.findByPk(req.params.id);
 
-    const listing = serialize(dbListingData);-
+    const listing = serialize(dbListingData); -
 
-    console.log('listing: ', listing);
+      console.log('listing: ', listing);
     res.render('single-listing', { listing, loggedIn: req.session.loggedIn });
-    
+
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 });
 
-router.get('/login', (req, res) => {
+// Add Listing Page
+router.get('/addlisting', (req, res) => {
+  if (req.session.loggedIn) {
+    res.render('listings-form');
+    return;
+  }
+  res.redirect('/login');
+});
 
+// Render log-in page
+router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
     return;

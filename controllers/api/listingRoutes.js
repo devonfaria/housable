@@ -12,9 +12,19 @@ router.get('/', async (req, res) => {
 });
 
 // Create new Listing
-router.post('/', async (req, res) => {
+router.post('/addlisting', async (req, res) => {
+  console.log('Req body: ', req.body);
   try {
-    const newListing = await Listing.create(req.body);
+    const newListing = await Listing.create({
+      title: req.body.title,
+      description: req.body.description,
+      plants: req.body.plants,
+      pets: req.body.pets,
+      contact: req.body.contact,
+      file_url: req.body.fileUrl,
+      circle_url: req.body.circleUrl,
+      user_id: req.body.userId
+    }, req.body);
     res.status(200).json(newListing);
   } catch (err) {
     res.status(400).json(err);
