@@ -1,8 +1,9 @@
 <div class="hero-wrapper">
   <img class='hero-main' src='/images/pexels-klaudia-ekert-2383122.jpg'>
 </div>
-<button id="signupOnHomepage" class="btn-no-style">Signup</button>
-
+<div class="signUp">
+  <a href="/login"><button class="button-primary" id="signupOnHomepage" class="btn-no-style">Sign Up</button></a>
+</div>
 {{#each listings}}
 <div class="container">
   {{> listing-cards}}
