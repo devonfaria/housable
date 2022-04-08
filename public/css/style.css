@@ -4,26 +4,30 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .hero-wrapper {
   max-height: 300px;
   width: 100%;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
-/* desktop */
-/* @media (max-width: 1000px) {
-  .hero-wrapper {
-    width: 100vw;
-    height: 100vh; */
-    
- /* }
-} */
+.site-header img {
+  max-width: 75%;
+  justify-content: flex-start;
+}
 
-/* phablet */
-/* @media (min-width: 550px) {
+.site-header {}
 
-  
-} */
+.signUp {
+  text-align: center;
+}
+
+.signUp button {
+  min-width: 50%;
+  padding: 20px;
+  height: auto;
+  font-size: x-large;
+}
+
