@@ -6,7 +6,8 @@
     "pets": "dog, cat, llama",
     "contact": "828-404-3030",
     "user_id": 1,
-    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428805/static/A_-_Front_Elevation_5_qf2awj.jpg"
+    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428764/static/WEBYonderFairview_BrenPhotography_080.41_zul2ah.jpg",
+    "circle_url": "https://res.cloudinary.com/dfamiaufc/image/upload/ar_1:1,b_rgb:ffffff,bo_1px_solid_rgb:ffffff,c_fill,g_auto,r_max,w_300/v1649428764/static/WEBYonderFairview_BrenPhotography_080.41_zul2ah.jpg"
   },
   {  
     "title": "Arts and Crafts Home",
@@ -15,16 +16,18 @@
     "pets": "ferret",
     "contact": "828-808-3030",
     "user_id": 2,
-    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428764/static/WEBYonderFairview_BrenPhotography_080.41_zul2ah.jpg"
+    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428805/static/A_-_Front_Elevation_5_qf2awj.jpg",
+    "circle_url": "https://res.cloudinary.com/dfamiaufc/image/upload/ar_1:1,b_rgb:ffffff,bo_1px_solid_rgb:ffffff,c_fill,g_auto,r_max,w_300/v1649428805/static/A_-_Front_Elevation_5_qf2awj.jpg"
   },
   {  
-    "title": "Trailer Heaven",
+    "title": "Mountain Heaven",
     "description": "This listing needs help with lawn work, cleaning the pool, and landscaping.",
     "plants": "Orchid",
     "pets": "cat, hamster",
     "contact": "828-707-3030",
     "user_id": 3,
-    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428763/static/A_-_Front_Elevation_1_.22_lhqgjj.jpg"
+    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428763/static/A_-_Front_Elevation_1_.22_lhqgjj.jpg",
+    "circle_url": "https://res.cloudinary.com/dfamiaufc/image/upload/ar_1:1,b_rgb:ffffff,bo_1px_solid_rgb:ffffff,c_fill,g_auto,r_max,w_300/v1649428763/static/A_-_Front_Elevation_1_.22_lhqgjj.jpg"
   },
   {  
     "title": "Mom's Guest House",
@@ -33,7 +36,8 @@
     "pets": "dog, horse",
     "contact": "828-606-3030",
     "user_id": 4,
-    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428763/static/MikeMatthews-Slideshow-2016-Ipad-Ramble_1_mc7fja.jpg"
+    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428763/static/MikeMatthews-Slideshow-2016-Ipad-Ramble_1_mc7fja.jpg",
+    "circle_url": "https://res.cloudinary.com/dfamiaufc/image/upload/ar_1:1,b_rgb:ffffff,bo_1px_solid_rgb:ffffff,c_fill,g_auto,r_max,w_300/v1649428763/static/MikeMatthews-Slideshow-2016-Ipad-Ramble_1_mc7fja.jpg"
   },
   {  
     "title": "Riverside Cottage",
@@ -42,7 +46,8 @@
     "pets": "llama",
     "contact": "828-505-3030",
     "user_id": 5,
-    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428763/static/IMG_0526_1_o5kboo.jpg"
+    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428763/static/IMG_0526_1_o5kboo.jpg",
+    "circle_url": "https://res.cloudinary.com/dfamiaufc/image/upload/ar_1:1,b_rgb:ffffff,bo_1px_solid_rgb:ffffff,c_fill,g_auto,r_max,w_300/v1649428763/static/IMG_0526_1_o5kboo.jpg"
   },
   {  
     "title": "Castlemania",
@@ -51,6 +56,7 @@
     "pets": "dragon",
     "contact": "828-909-7878",
     "user_id": 1,
-    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428763/static/_DSC0104-min_ybjds0.jpg"
+    "file_url": "https://res.cloudinary.com/dfamiaufc/image/upload/v1649428763/static/_DSC0104-min_ybjds0.jpg",
+    "circle_url": "https://res.cloudinary.com/dfamiaufc/image/upload/ar_1:1,b_rgb:ffffff,bo_0px_solid_rgb:ffffff,c_fill,g_auto,r_max,w_300/v1649428763/static/_DSC0104-min_ybjds0.jpg"
   }
 ]
