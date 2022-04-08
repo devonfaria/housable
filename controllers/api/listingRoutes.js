@@ -21,9 +21,9 @@ router.post('/addlisting', async (req, res) => {
       plants: req.body.plants,
       pets: req.body.pets,
       contact: req.body.contact,
-      file_url: req.body.file_url,
-      circle_url: req.body.circle_url,
-      user_id: req.body.user_id
+      file_url: req.body.fileUrl,
+      circle_url: req.body.circleUrl,
+      user_id: req.body.userId
     }, req.body);
     res.status(200).json(newListing);
   } catch (err) {

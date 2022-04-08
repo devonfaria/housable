@@ -1,6 +1,6 @@
 const listingFormHandler = async (event) => {
   event.preventDefault();
-
+  console.log('Creating form');
   const title = document.getElementById('title').value.trim();
   const description = document.getElementById('description').value.trim();
   const plants = document.getElementById('plants').value.trim();
@@ -11,6 +11,8 @@ const listingFormHandler = async (event) => {
   const userId = document.getElementById('user-id').value.trim();
 
   if (title && description && contact && userId) {
+    const newListing = { title, description, plants, pets, contact, fileUrl, circleUrl, userId };
+    console.log(newListing);
     const response = await fetch('/api/listings/addlisting', {
       method: 'POST',
       body: JSON.stringify({ title, description, plants, pets, contact, fileUrl, circleUrl, userId }),
@@ -25,3 +27,5 @@ const listingFormHandler = async (event) => {
     }
   }
 };
+
+document.querySelector('.listing-form').addEventListener('submit', listingFormHandler);
