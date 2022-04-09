@@ -31,3 +31,21 @@
   font-size: x-large;
 }
 
+/* login & signup form */
+/* https://htmlcolorcodes.com/ */
+.login-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.login-card {
+  padding: 20px;
+  margin: 50px;
+  border: 2px solid rgb(247, 164, 60);
+  /* border: 3px solid lightgrey; */
+  /* background: lightgrey; */
+}
+.login-btn {
+  /* background: rgb(247, 164, 60, 70%); */
+  background: rgba(179, 175, 170, 70%);
+}
