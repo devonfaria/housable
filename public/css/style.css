@@ -14,7 +14,7 @@
 }
 
 .site-header img {
-  max-width: 75%;
+  max-width: 350px;
   justify-content: flex-start;
 }
 
@@ -22,6 +22,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 2px #16161d solid;
+  z-index: 1;
 }
 
 .signUp {
@@ -49,6 +52,10 @@ nav a {
   .site-header {
     display: flex;
     flex-direction: column;
+  }
+
+  nav {
+    margin-right: 0;
   }
 }
 
@@ -82,6 +89,13 @@ nav a {
 .listings-container {
   padding: 20px;
 }
+
+header {}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 
 footer {
   background-color: black;
