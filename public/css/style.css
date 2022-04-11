@@ -36,6 +36,11 @@
   padding: 20px;
   height: auto;
   font-size: x-large;
+  box-shadow: 5px 5px 7px 2px lightgrey
+}
+
+button {
+  box-shadow: 3px 3px 7px 2px lightgrey
 }
 
 nav {
@@ -70,6 +75,8 @@ nav a {
   padding: 20px;
   margin: 50px;
   border: 2px solid rgb(247, 164, 60);
+  min-width: 33%;
+  box-shadow: 5px 5px 7px 2px lightgrey;
   /* border: 3px solid lightgrey; */
   /* background: lightgrey; */
 }
@@ -93,13 +100,35 @@ nav a {
   position: fixed;
   top: 0;
   width: 100%;
+  margin-left: -8px;
+
 }
 
 footer {
-  background-color: black;
+  background-color: #16161d;
   color: white;
   height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: -8px;
+  margin-top: auto;
+}
+
+.footer-header {
+  margin: 0;
+}
+
+.site-header {
+  transition: 650ms ease all;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
 }
