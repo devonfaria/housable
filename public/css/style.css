@@ -45,12 +45,12 @@ nav a {
   margin: 1rem;
 }
 
-@media (max-width: 1300px) { 
+@media (max-width: 1300px) {
   .site-header {
     display: flex;
     flex-direction: column;
   }
- }
+}
 
 /* login & signup form */
 /* https://htmlcolorcodes.com/ */
@@ -66,8 +66,18 @@ nav a {
   /* border: 3px solid lightgrey; */
   /* background: lightgrey; */
 }
+
 .login-btn {
   /* background: rgb(247, 164, 60, 70%); */
   background: rgba(179, 175, 170, 70%);
 }
 
+.listings-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.listings-container {
+  padding: 20px;
+}
