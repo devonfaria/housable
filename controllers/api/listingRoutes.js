@@ -1,5 +1,8 @@
 const router = require('express').Router();
 const { Listing } = require('../../models');
+const { unlinkSync } = require('fs');
+const { upload, uploadToCloudinary } = require('../../controllers/upload');
+const db = require('../../models');
 
 // Get all Listings
 router.get('/', async (req, res) => {
@@ -9,6 +12,18 @@ router.get('/', async (req, res) => {
   } catch (err) {
     res.status(400).json(err);
   }
+});
+
+router.post('/upload', upload, async (req, res) => {
+  const { file } = req;
+  // Captures the file data from the upload process and sends it to Cloudinary
+  const result = await uploadToCloudinary(file.path, { folder: 'listings' });
+  // When the upload is complete, delete it from the /tmp directory
+  if (file) unlinkSync(file.path);
+  console.log(result);
+  // Ensure it exists before return the result otherise send a 404
+  if (result) return res.json({ photoUrl: result.public_id });
+  return res.statusCode(404);
 });
 
 // Create new Listing

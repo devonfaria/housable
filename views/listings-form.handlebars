@@ -1,71 +1,75 @@
 {{!-- res.render('listings') will get this file name in the controller directory route file that you set --}}
-{{!-- the render function takes in 2 parameters: 1. handlebar template name 2. object full of options { example: dishes }  --}}
+{{!-- the render function takes in 2 parameters: 1. handlebar template name 2. object full of options { example: dishes
+} --}}
 
-  <div class='add-listing'>
-    <h2>
-      Please fill out the form to create your listing!
-    </h2>
-    <form class='listing-form'>
-      <label for='title'>
-        Listing Title:
-      </label>
-      <br />
-      <textarea id='title' name='title' rows='2' cols='30'>
+<div class='add-listing'>
+  <h2>
+    Please fill out the form to create your listing!
+  </h2>
+  <form class='listing-form'>
+    <label for='title'>
+      Listing Title:
+    </label>
+    <br />
+    <textarea id='title' name='title' rows='2' cols='30'>
       </textarea>
-      <br />
-      <label for='description'>
-        Tasks Description:
-      </label>
-      <br />
-      <textarea id='description' name='description' rows='5' cols='30'>
+    <br />
+    <label for='description'>
+      Tasks Description:
+    </label>
+    <br />
+    <textarea id='description' name='description' rows='5' cols='30'>
       </textarea>
-      <br />
-      <label for='plants'>
-        Plants that will require care:
-      </label>
-      <br />
-      <textarea id='plants' name='plants' rows='2' cols='30'>
+    <br />
+    <label for='plants'>
+      Plants that will require care:
+    </label>
+    <br />
+    <textarea id='plants' name='plants' rows='2' cols='30'>
       </textarea>
-      <br />
-      <label for='pets'>
-        Pets that will require care:
-      </label>
-      <br />
-      <textarea id='pets' name='pets' rows='2' cols='30'>
+    <br />
+    <label for='pets'>
+      Pets that will require care:
+    </label>
+    <br />
+    <textarea id='pets' name='pets' rows='2' cols='30'>
       </textarea>
-      <br />
-      <label for='contact'>
-        Contact (phone/email) associated with this listing:
-      </label>
-      <br />
-      <textarea id='contact' name='contact' rows='2' cols='30'>
+    <br />
+    <label for='contact'>
+      Contact (phone/email) associated with this listing:
+    </label>
+    <br />
+    <textarea id='contact' name='contact' rows='2' cols='30'>
       </textarea>
-      <br />
-      <label for='file-url'>
-        Please enter the image URL for your listing:
-      </label>
-      <br />
-      <textarea id='file-url' name='file-url' rows='2' cols='30'>
+    <br />
+    <label for='file-upload'>
+      Please upload image of your listing:
+    </label>
+    <br />
+    <div class="col-12">
+      <div class="form-group">
+        <input type="file" id="image" accept="image/*" name="image" />
+      </div>
+    </div>
+    <br />
+    <label for='circle-url'>
+      Please enter the circular image URL for your listing:
+    </label>
+    <br />
+    <textarea id='circle-url' name='circle-url' rows='2' cols='30'>
       </textarea>
-      <br />
-      <label for='circle-url'>
-        Please enter the circular image URL for your listing:
-      </label>
-      <br />
-      <textarea id='circle-url' name='circle-url' rows='2' cols='30'>
+    <br />
+    <label for='user-id'>
+      What is your user ID?
+    </label>
+    <br />
+    <textarea id='user-id' name='user-id' rows='2' cols='30'>
       </textarea>
-      <br />
-      <label for='user-id'>
-        What is your user ID?
-      </label>
-      <br />
-      <textarea id='user-id' name='user-id' rows='2' cols='30'>
-      </textarea>
-      <button type='submit' value='Submit'>
-        Submit
-      </button>
-    </form>
-  </div>
+    <button type='submit' value='Submit'>
+      Submit
+    </button>
+  </form>
+</div>
 </div>
 <!-- This is the form for adding a new listing -->
 <script src='/js/listing.js'></script>
