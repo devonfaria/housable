@@ -11,11 +11,6 @@ Listing.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    // date_created: {
-    //   type: DataTypes.DATE,
-    //   allowNull: false,
-    //   defaultValue: DataTypes.NOW,
-    // },
     title: {
       type: DataTypes.STRING,
       allowNull: false,

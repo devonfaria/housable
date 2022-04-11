@@ -1,0 +1,21 @@
+<header class="jumbotron">
+  <h1 class="title">Image Upload Demo</h1>
+</header>
+<section class="row">
+  <div class="col-12">
+    <div class="form-group">
+      <input type="file" id="image" accept="image/*" name="image" />
+    </div>
+  </div>
+</section>
+{{#if photos}}
+<section class="row">
+  {{#each photos}}
+  <div id={{id}} class="col-12 col-md-6 col-lg-4 mb-4">
+    <picture>
+      <img src="{{url}}" class="img-fluid img-thumbnail" alt="{{name}}" />
+    </picture>
+  </div>
+  {{/each}}
+</section>
+{{/if}}
