@@ -1,5 +1,6 @@
 const imageUploadEl = document.querySelector('#image');
 let fileUrl;
+let circleUrl;
 
 const listingFormHandler = async (event) => {
   event.preventDefault();
@@ -9,7 +10,6 @@ const listingFormHandler = async (event) => {
   const plants = document.getElementById('plants').value.trim();
   const pets = document.getElementById('pets').value.trim();
   const contact = document.getElementById('contact').value.trim();
-  const circleUrl = document.getElementById('circle-url').value.trim();
   const userId = document.getElementById('user-id').value.trim();
 
 
@@ -41,5 +41,9 @@ imageUploadEl.addEventListener('change', async (event) => {
   };
   formData.append("file", file);
   const { data } = await axios.post('/api/listings/upload', formData, config);
-  fileUrl = data.photoUrl;
+  console.log('Data: ', data);
+  fileUrl = `https://res.cloudinary.com/dfamiaufc/image/upload/${data.photoUrl}`;
+  circleUrl = `https://res.cloudinary.com/dfamiaufc/image/upload/ar_1:1,b_rgb:ffffff,bo_1px_solid_rgb:ffffff,c_fill,g_auto,r_max,w_300/${data.photoUrl}`;
+  console.log(fileUrl, circleUrl);
 });
+
