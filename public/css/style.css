@@ -133,3 +133,18 @@ body {
 footer {
   margin-top: auto;
 }
+
+.add-listing {
+  border: 2px solid #16161d;
+  border-radius: 10px;
+  box-shadow: 5px 5px 7px 2px lightgrey
+}
+
+.listing-header {
+  margin-top: 2rem;
+}
+
+.listing-form textarea {
+  min-width: -webkit-fill-available;
+  margin: 0 40px;
+}
