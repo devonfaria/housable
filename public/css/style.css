@@ -18,7 +18,11 @@
   justify-content: flex-start;
 }
 
-.site-header {}
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .signUp {
   text-align: center;
@@ -30,6 +34,23 @@
   height: auto;
   font-size: x-large;
 }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  margin-right: 3rem;
+}
+
+nav a {
+  margin: 1rem;
+}
+
+@media (max-width: 1300px) { 
+  .site-header {
+    display: flex;
+    flex-direction: column;
+  }
+ }
 
 /* login & signup form */
 /* https://htmlcolorcodes.com/ */
@@ -49,3 +70,4 @@
   /* background: rgb(247, 164, 60, 70%); */
   background: rgba(179, 175, 170, 70%);
 }
+
