@@ -38,7 +38,7 @@ router.post('/addlisting', async (req, res) => {
       contact: req.body.contact,
       file_url: req.body.fileUrl,
       circle_url: req.body.circleUrl,
-      user_id: req.body.userId
+      user_id: req.session.user_id
     }, req.body);
     res.status(200).json(newListing);
   } catch (err) {
