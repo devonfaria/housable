@@ -1,7 +1,8 @@
-<section class="container">
-  <a href="/listings/{{id}}">
-    <p>{{title}}  {{format_date createdAt}}</p>
-  </a>
-  <img src="{{circle_url}}" alt="test">
-    {{!-- <img src="/images/{{paintings.[0].filename}}" alt="{{paintings.[0].description}}"> --}}
-</section>
+<div class="listings-container">
+  <div class="listing-card">
+    <a href="/listings/{{id}}">
+      <p>{{title}} {{format_date createdAt}}</p>
+    </a>
+    <img src="{{circle_url}}" alt="Listing Photo">
+  </div>
+</div>
