@@ -60,7 +60,6 @@ nav a {
 }
 
 /* login & signup form */
-/* https://htmlcolorcodes.com/ */
 .login-form {
   display: flex;
   justify-content: center;
@@ -89,8 +88,6 @@ nav a {
 .listings-container {
   padding: 20px;
 }
-
-header {}
 
 .sticky {
   position: fixed;
