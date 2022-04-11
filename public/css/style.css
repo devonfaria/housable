@@ -18,7 +18,11 @@
   justify-content: flex-start;
 }
 
-.site-header {}
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .signUp {
   text-align: center;
@@ -31,3 +35,19 @@
   font-size: x-large;
 }
 
+nav {
+  display: flex;
+  flex-direction: row;
+  margin-right: 3rem;
+}
+
+nav a {
+  margin: 1rem;
+}
+
+@media (max-width: 1300px) { 
+  .site-header {
+    display: flex;
+    flex-direction: column;
+  }
+ }
