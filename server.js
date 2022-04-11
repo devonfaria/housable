@@ -16,7 +16,6 @@ const PORT = process.env.PORT || 3001;
 const sess = {
   secret: 'Super secret secret',
   cookie: {
-    maxAge: 86400,
   },
   resave: false,
   saveUninitialized: true,
@@ -25,6 +24,18 @@ const sess = {
   })
 };
 
+// function checkSession(req, res, next) {
+//   if (req.session.cookie) {
+//     console.log("Exists");
+//     console.log(req.session.cookie);
+//     next();
+//   } else {
+//     console.log("No exist :( ");
+//     next();
+//   }
+// }
+
+// app.use(session(sess), checkSession);
 
 app.use(session(sess));
 
@@ -46,3 +57,4 @@ sequelize.sync({ force: false }).then(() => {
   const dir = path.join(__dirname, 'tmp/');
   if (!existsSync(dir)) mkdirSync(dir, 0744);
 });
+
