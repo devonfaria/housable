@@ -1,11 +1,9 @@
-<section class="card">
-  <h1>Title: {{listing.title}}</h1>
-    {{!-- <header>Date: {{format_date date_created}}</header> --}}
-    <header>Listed on: {{format_date listing.createdAt}}</header>
-    <img src="{{listing.file_url}}" alt="test">
-    <div>Description: {{listing.description}}</div>
-    <div>Plants: {{listing.plants}}</div>
-    <div>Pets: {{listing.pets}}</div>
-    <div>Contact: {{listing.contact}}</div>
-    {{!-- <img src="/images/{{paintings.[0].filename}}" alt="{{paintings.[0].description}}"> --}}
+<section class="container card">
+  <h3> {{listing.title}}</h3>
+  <header>Listed on: {{format_date listing.createdAt}}</header>
+  <img src="{{listing.file_url}}" alt="test">
+  <div>Description: {{listing.description}}</div>
+  <div>Plants: {{listing.plants}}</div>
+  <div>Pets: {{listing.pets}}</div>
+  <div>Contact: {{listing.contact}}</div>
 </section>
