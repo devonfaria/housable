@@ -93,7 +93,8 @@ nav a {
 }
 
 .listings-container {
-  padding: 20px;
+  padding: 40px;
+  margin: 30px;
 }
 
 .sticky {
