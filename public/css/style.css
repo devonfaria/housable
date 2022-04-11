@@ -61,6 +61,11 @@ nav a {
 
   nav {
     margin-right: 0;
+    display: flow-root;
+  }
+
+  .listings-container {
+    overflow: hidden;
   }
 }
 
@@ -99,10 +104,12 @@ nav a {
   border: 2px solid rgb(247, 164, 60);
   min-width: 33%;
   box-shadow: 5px 5px 7px 2px lightgrey;
-  color:rgb(247, 164, 60);
+  color: rgb(247, 164, 60);
 }
-.listings-container p, a{
-  color:rgb(247, 164, 60);
+
+.listings-container p,
+a {
+  color: rgb(247, 164, 60);
   text-decoration: none;
 }
 
@@ -156,4 +163,12 @@ footer {
 .listing-form textarea {
   min-width: -webkit-fill-available;
   margin: 0 40px;
+}
+
+.card {
+  max-width: 1000px;
+}
+
+.card img {
+  max-width: 100%;
 }
