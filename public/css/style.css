@@ -82,3 +82,12 @@ nav a {
 .listings-container {
   padding: 20px;
 }
+
+footer {
+  background-color: black;
+  color: white;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
