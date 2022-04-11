@@ -42,8 +42,9 @@ imageUploadEl.addEventListener('change', async (event) => {
   formData.append("file", file);
   const { data } = await axios.post('/api/listings/upload', formData, config);
   console.log('Data: ', data);
-  fileUrl = `https://res.cloudinary.com/dfamiaufc/image/upload/${data.photoUrl}`;
+  fileUrl = `https://res.cloudinary.com/dfamiaufc/image/upload/c_scale,w_1000/${data.photoUrl}`;
   circleUrl = `https://res.cloudinary.com/dfamiaufc/image/upload/ar_1:1,b_rgb:ffffff,bo_1px_solid_rgb:ffffff,c_fill,g_auto,r_max,w_300/${data.photoUrl}`;
   console.log(fileUrl, circleUrl);
 });
+
 
