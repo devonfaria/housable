@@ -60,7 +60,6 @@ nav a {
 }
 
 /* login & signup form */
-/* https://htmlcolorcodes.com/ */
 .login-form {
   display: flex;
   justify-content: center;
@@ -90,12 +89,11 @@ nav a {
   padding: 20px;
 }
 
-header {}
-
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+}
 
 footer {
   background-color: black;
