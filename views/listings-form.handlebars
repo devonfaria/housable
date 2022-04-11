@@ -2,10 +2,11 @@
 {{!-- the render function takes in 2 parameters: 1. handlebar template name 2. object full of options { example: dishes
 } --}}
 
-<div class='add-listing'>
-  <h2>
+<div class='add-listing container'>
+  <h3 class="listing-header">
     Please fill out the form to create your listing!
-  </h2>
+  </h3>
+  <hr>
   <form class='listing-form'>
     <label for='title'>
       Listing Title:
@@ -65,9 +66,11 @@
     <br />
     <textarea id='user-id' name='user-id' rows='2' cols='30'>
       </textarea>
-    <button type='submit' value='Submit'>
-      Submit
-    </button>
+    <div>
+      <button type='submit' value='Submit'>
+        Submit
+      </button>
+    </div>
   </form>
 </div>
 </div>
