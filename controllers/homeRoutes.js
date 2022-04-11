@@ -58,7 +58,8 @@ router.get('/listings/:id', withAuth, async (req, res) => {
 // Add Listing Page
 router.get('/addlisting', (req, res) => {
   if (req.session.loggedIn) {
-    res.render('listings-form');
+    res.render('listings-form',
+      { loggedIn: req.session.loggedIn })
     return;
   }
   res.redirect('/login');
