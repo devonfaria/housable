@@ -96,4 +96,12 @@ header {}
   position: fixed;
   top: 0;
   width: 100%;
+
+footer {
+  background-color: black;
+  color: white;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -12,6 +12,4 @@ Listing.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
-
-
-module.exports = { User, Listing};
+module.exports = { User, Listing };

@@ -19,7 +19,8 @@
         <a href="/listings"><button>Listings</button></a>
         {{#if loggedIn}}
         <a href="/addlisting"><button id="createListing">Create Listing</button></a>
-        <button id="logout" class="btn-no-style">Logout</button>
+        <a href="/" class="btn-no-style" id="logout"><button>Logout</button></a>
+        {{!-- <button id="logout" class="btn-no-style">Logout</button> --}}
         {{else}}
         <a href="/login"><button>Login</button></a>
         {{/if}}
@@ -37,5 +38,7 @@
   {{/if}}
 </body>
 <script src="/js/main.js"></script>
-
+<footer>
+  <h6 class="footer-header">Housable 2022</h6>
+</footer>
 </html>
