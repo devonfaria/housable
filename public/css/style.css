@@ -165,4 +165,10 @@ footer {
   margin: 0 40px;
 }
 
-.card {}
+.card {
+  max-width: 1000px;
+}
+
+.card img {
+  max-width: 100%;
+}
