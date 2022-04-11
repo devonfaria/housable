@@ -14,7 +14,7 @@
 }
 
 .site-header img {
-  max-width: 75%;
+  max-width: 350px;
   justify-content: flex-start;
 }
 
@@ -22,6 +22,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 2px #16161d solid;
+  z-index: 1;
 }
 
 .signUp {
@@ -33,6 +36,11 @@
   padding: 20px;
   height: auto;
   font-size: x-large;
+  box-shadow: 5px 5px 7px 2px lightgrey
+}
+
+button {
+  box-shadow: 3px 3px 7px 2px lightgrey
 }
 
 nav {
@@ -50,10 +58,13 @@ nav a {
     display: flex;
     flex-direction: column;
   }
+
+  nav {
+    margin-right: 0;
+  }
 }
 
 /* login & signup form */
-/* https://htmlcolorcodes.com/ */
 .login-form {
   display: flex;
   justify-content: center;
@@ -64,6 +75,8 @@ nav a {
   padding: 20px;
   margin: 50px;
   border: 2px solid rgb(247, 164, 60);
+  min-width: 33%;
+  box-shadow: 5px 5px 7px 2px lightgrey;
   /* border: 3px solid lightgrey; */
   /* background: lightgrey; */
 }
@@ -80,14 +93,43 @@ nav a {
 }
 
 .listings-container {
-  padding: 20px;
+  padding: 40px;
+  margin: 30px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-left: -8px;
+
 }
 
 footer {
-  background-color: black;
+  background-color: #16161d;
   color: white;
   height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: -8px;
+  margin-top: auto;
+}
+
+.footer-header {
+  margin: 0;
+}
+
+.site-header {
+  transition: 650ms ease all;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
 }
