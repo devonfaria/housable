@@ -4,17 +4,18 @@
 
 [Link to deployed application](https://hidden-earth-95543.herokuapp.com/)
 
+[link to GitHub repository](https://github.com/devonfaria/housable)
+
 We are a dedicated company that helps you find a trustworthy person to watch your house while you are away. We've all had the problems where we're on vacation or we need somebody to watch your house, and we just can't find anybody trustworthy to watch your house for you. We made a way which makes it easy to find trustworthy people to watch your house while you're away.
 
 Our database keeps track of listings and their associated user, tasks, plants, pets, and the dates when the home needs sitting. We protect our users by making site visitors create an account before viewing the listing details.  
 
-![website screenshot](./public/images/)
+![website screenshot](./public/images/website-overview.png)
 
 
 Table of contents
 =================
 
-   * [Links](#links)
    * [User Story](#user-story)
    * [Demo](#demo)
    * [Installation Guidelines](#installation-guidelines)
@@ -24,27 +25,18 @@ Table of contents
    * [License](#license)
     
 
-Links
-=================   
-
-[link to deployed Heroku website](#)
-
-[link to GitHub repository](https://github.com/devonfaria/housable)
-
-
-
 User Story
 =================
 
-1. As someone with pets and/or plants, I want to be able to travel while having someone take care of my house, plants, and/or animals. I want to be able to receive applications from local users interested in taking care of my house/pets/animals.
+1. As someone with pets and/or plants, I want to be able to travel while having someone take care of my house, plants, and/or animals. I want to be able to receive applications from local users interested in taking care of my house/pets/plants.
 
-2. As someone who is looking to obtain part time work, I want to be able to find jobs for house sitting, plant sitting, and/or plant sitting. I want to be able to find jobs close to me. 
+2. As someone who is looking to obtain part time work, I want to be able to find jobs for house sitting, plant sitting, and/or pet sitting. I want to be able to find jobs close to me. 
 
 
 Demo
 =================
 
-tbd-- video of website goes here
+
 
 
 Installation Guidelines
@@ -79,8 +71,6 @@ To initiate the server, run:
 If the last message in the terminal says "App listening on port (#)!", then you have installed the program correctly. If you ever need to shut down this server application use this command:
 
 `^C`
-
-[Click here for a video explaining installation and testing of the application](https://drive.google.com/file/d/18LL3mpnkWB_sBItLjntgRZ4OAQmvft6M/view?usp=sharing)
 
 Technologies
 =================
