@@ -41,7 +41,6 @@
 
 button {
   box-shadow: 3px 3px 7px 2px lightgrey;
-  font-size: 15px;
 }
 
 nav {
@@ -172,4 +171,20 @@ footer {
 
 .card img {
   max-width: 100%;
+}
+
+.listing-info {
+  margin-top: 20px;
+}
+
+.listing-info div {
+  padding: 7px;
+}
+
+.single-header {
+  margin-bottom: 20px;
+}
+
+.listing-img {
+  max-width: 1000px;
 }
