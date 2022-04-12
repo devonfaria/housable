@@ -17,6 +17,7 @@ Table of contents
 =================
 
    * [User Story](#user-story)
+   * [Visuals](#visuals)
    * [Demo](#demo)
    * [Installation Guidelines](#installation-guidelines)
    * [Technologies](#technologies)
@@ -33,9 +34,32 @@ User Story
 2. As someone who is looking to obtain part time work, I want to be able to find jobs for house sitting, plant sitting, and/or pet sitting. I want to be able to find jobs close to me. 
 
 
-Demo
+Visuals
 =================
 
+Homepage visual:
+
+![housable homepage](./public/images/Housable-home.png)
+
+Log-in visual:
+
+![housable log in](./public/images/Housable-login.png)
+
+Logged in Homepage visual:
+
+![housable homepage logged in](./public/images/Housable-loggedout.png)
+
+Listings Page visual:
+
+![housable listing page](./public/images/Housable-listings.png)
+
+Add Listing Form visual:
+
+![housable add listing form](./public/images/Housable-addlisting.png)
+
+Add Single Listing visual:
+
+![housable single listing](./public/images/Housable-home.png)
 
 
 
