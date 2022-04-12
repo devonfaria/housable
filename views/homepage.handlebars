@@ -1,10 +1,12 @@
 <div class="hero-wrapper">
   <img class='hero-main' src='/images/hero-img.jpg'>
 </div>
+{{#if loggedIn}}
+{{else}}
 <div class="signUp">
   <a href="/login"><button class="button-primary" id="signupOnHomepage" class="btn-no-style">Sign Up</button></a>
 </div>
-
+{{/if}}
 <div class="container">
   <h1 class="section-heading">Welcome to Housable!</h1>
   <h5 class="section-description">Need to go somewhere? Looking for someone to watch your house while you're gone, Look
