@@ -40,7 +40,8 @@
 }
 
 button {
-  box-shadow: 3px 3px 7px 2px lightgrey
+  box-shadow: 3px 3px 7px 2px lightgrey;
+  font-size: 15px;
 }
 
 nav {
