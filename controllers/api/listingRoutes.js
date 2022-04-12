@@ -29,6 +29,7 @@ router.post('/upload', upload, async (req, res) => {
 // Create new Listing
 router.post('/addlisting', async (req, res) => {
   console.log('Req body: ', req.body);
+  console.log('Req session: ', req.session);
   try {
     const newListing = await Listing.create({
       title: req.body.title,
@@ -38,7 +39,7 @@ router.post('/addlisting', async (req, res) => {
       contact: req.body.contact,
       file_url: req.body.fileUrl,
       circle_url: req.body.circleUrl,
-      user_id: req.body.userId
+      user_id: req.session.user_id
     }, req.body);
     res.status(200).json(newListing);
   } catch (err) {

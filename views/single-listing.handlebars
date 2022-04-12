@@ -1,9 +1,11 @@
 <section class="container card">
   <h3> {{listing.title}}</h3>
-  <header>Listed on: {{format_date listing.createdAt}}</header>
-  <img src="{{listing.file_url}}" alt="test">
-  <div>Description: {{listing.description}}</div>
-  <div>Plants: {{listing.plants}}</div>
-  <div>Pets: {{listing.pets}}</div>
-  <div>Contact: {{listing.contact}}</div>
+  <header class="single-header">Listed on: {{format_date listing.createdAt}}</header>
+  <img src="{{listing.file_url}}" alt="test" class="listing-img">
+  <div class="listing-info">
+    <div>Description: {{listing.description}}</div>
+    <div>Plants: {{listing.plants}}</div>
+    <div>Pets: {{listing.pets}}</div>
+    <div>Contact: {{listing.contact}}</div>
+  </div>
 </section>

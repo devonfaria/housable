@@ -4,21 +4,18 @@ let circleUrl;
 
 const listingFormHandler = async (event) => {
   event.preventDefault();
-  console.log('Creating form');
   const title = document.getElementById('title').value.trim();
   const description = document.getElementById('description').value.trim();
   const plants = document.getElementById('plants').value.trim();
   const pets = document.getElementById('pets').value.trim();
   const contact = document.getElementById('contact').value.trim();
-  const userId = document.getElementById('user-id').value.trim();
 
-
-  if (title && description && contact && userId) {
-    const newListing = { title, description, plants, pets, contact, fileUrl, circleUrl, userId };
+  if (title && description && contact) {
+    const newListing = { title, description, plants, pets, contact, fileUrl, circleUrl };
     console.log(newListing);
     const response = await fetch('/api/listings/addlisting', {
       method: 'POST',
-      body: JSON.stringify({ title, description, plants, pets, contact, fileUrl, circleUrl, userId }),
+      body: JSON.stringify({ title, description, plants, pets, contact, fileUrl, circleUrl }),
       headers: { 'Content-Type': 'application/json' },
     });
 
@@ -46,4 +43,5 @@ imageUploadEl.addEventListener('change', async (event) => {
   circleUrl = `https://res.cloudinary.com/dfamiaufc/image/upload/ar_1:1,b_rgb:ffffff,bo_1px_solid_rgb:ffffff,c_fill,g_auto,r_max,w_300/${data.photoUrl}`;
   console.log(fileUrl, circleUrl);
 });
+
 
